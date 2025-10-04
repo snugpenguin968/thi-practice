@@ -83,16 +83,14 @@ To ensure the frontend and backend can communicate, every "Kudo" object must fol
 
 ### Core Tasks
 
-Your instructor will assign your pair-programming team one of the following four core tasks. Communicate with the other teams to integrate your parts!
-
 #### **Backend Task 1: Get All Kudos**
 
 * **Goal:** Create the API endpoint that sends the list of all kudos to the frontend.
 * **Database:** For this project, your "database" is just an in-memory Python list in `main.py`.
-    ```python
-    # In main.py
-    db = [] # This is your database!
-    ```
+```python
+# In main.py
+db = [] # This is your database!
+```
 * **Endpoint:** `GET /kudos`
 * **Success Response:** A `200 OK` status with a JSON array of Kudo objects, sorted with the newest first.
 
