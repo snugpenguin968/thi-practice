@@ -1,9 +1,11 @@
 from database import Kudos, db
 import time
-from main import app
+from fastapi import APIRouter
+
+router = APIRouter()
 
 
-@app.post("/kudos")
+@router.post("/kudos")
 async def send_kudos(kudos: dict):
     try:
         k = Kudos(
